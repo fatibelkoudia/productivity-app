@@ -1,6 +1,10 @@
 .header {
-    background-color: #86a1f3;
+    background-color:#FFE6E6;
     color: #fff;
     padding: 20px;
     
+  }
+  h1{
+    text-align: center;
+    color: #7469B6;
   }
