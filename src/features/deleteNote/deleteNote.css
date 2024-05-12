@@ -1,0 +1,21 @@
+.delete-button{
+    position:absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 50px; ;
+    right: 12px;
+    transform: translateY(-50%);
+    padding: 0;
+    border: none;
+    background-color: #ca7af5;
+}
+button{
+    position: absolute;
+    border: none;
+    height: 30px;
+    width: 30px;
+    right: 1rem ;
+    top: 1rem ;
+    
+}

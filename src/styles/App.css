@@ -5,7 +5,22 @@
 
 
 main{
-  background-color:#FFE6E6;
+  background-color:#fefefe;
   height: 100vh;
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  color: hsl(198, 1%, 29%);
+  font-family: "Architects Daughter";
+  text-align: center;
+  font-size: 130%;
+}
+
+li {
+  text-align: left;
+  position: relative;
+  padding: 0.5rem;
 }
 

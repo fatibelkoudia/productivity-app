@@ -2,23 +2,18 @@ import { useState } from 'react';
 import React from 'react';
 import './note.css';
 import DeleteNote from '../deleteNote/deleteNote';
+import { deleteNote, listNotes } from '../../services/noteService';
 
 export default function Note({ note, setNotes }) {
     function handleDelete() {
-        const notesFromStorage = localStorage.getItem('myNotes');
-        const notes = JSON.parse(notesFromStorage);
-
-        const updatedNotes = notes.filter((item) => {
-            return item.name !== note.name && item.description !== note.description;
-        });
-        localStorage.setItem('myNotes', JSON.stringify(updatedNotes));
-        setNotes(updatedNotes);
+        console.log(note);
+        deleteNote(note, setNotes);
     }
 
     return (
         <div className="note">
             <h3 className="item">{note.name}</h3>
-            <p>{note.description}</p>
+            <p className="item">{note.description}</p>
             <DeleteNote onDelete={handleDelete} />
         </div>
     );

@@ -1,3 +1,42 @@
 .add-note{
+    display: grid;
+    grid-template-columns: 1fr 40px;
     background-color: transparent;
+    background-size: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 7px 2px #00000040;
+    padding: 1rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+.add-note > div:first-child {
+    display: inherit;
+    grid-template-rows: auto 1fr;
+}
+.input{
+    padding: 4px;
+    margin: 4px;
+    border-radius: 20px;
+    padding: 1rem;
+    border-style: none;
+}
+.title-input{
+height: 60px;
+border: solid;
+
+border-style: none;
+}
+
+.add-button{
+   position:absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 50px; ;
+    right: 12px;
+    transform: translateY(-50%);
+    padding: 0;
+    border: none;
+    background-color: #ca7af5;
+
 }

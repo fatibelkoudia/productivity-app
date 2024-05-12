@@ -7,14 +7,11 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import { NoteList } from './features/noteList/noteList';
 import AddNote from './features/addNote/addNote';
+import { listNotes } from './services/noteService';
 
 function App() {
-    const notesFromStorage = localStorage.getItem('myNotes');
-    if (!notesFromStorage) {
-        localStorage.setItem('myNotes', JSON.stringify([]));
-    }
-    const parsedNotes = JSON.parse(notesFromStorage);
-    const [notes, setNotes] = useState(parsedNotes);
+    const list = listNotes();
+    const [notes, setNotes] = useState(list);
 
     return (
         <>
